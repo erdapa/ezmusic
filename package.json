@@ -1,0 +1,27 @@
+{
+  "name": "ezmusic",
+  "productName": "EzMusic",
+  "version": "1.2.3",
+  "description": "Play any song instantly!",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdapa/ezmusic.git"
+  },
+  "author": "Eric Payne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erdapa/ezmusic/issues"
+  },
+  "homepage": "https://github.com/erdapa/ezmusic#readme",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}

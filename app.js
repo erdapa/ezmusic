@@ -14,7 +14,7 @@ app.on('ready', function() {
     x:20, y:20,
     frame: false
   });
-  mainWindow.loadURL('index.html');
+  mainWindow.loadURL('app/index.html');
   mainWindow.on('closed', function() {
     mainWindow = null;
   });

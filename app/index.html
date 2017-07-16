@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <script src="context.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="inner-content">
+        <webview src="https://lifeluvr.github.io/ezmusic-floral"></webview>
+      <div id="credits">
+        <p>Artwork Provided by: <b>Mrs. Bronwyn Wilson</b></p>
+      </div>
+        <div id="drag" name="drag">
+          <div class="dropdown">
+            <button type="button" class="dropbtn btn-sm" ><span class="glyphicon glyphicon-cd"></span><strong> EzMusic </strong></button>
+          <div class="dropdown-content">
+              <a href="#" data-toggle="modal" data-target="#aboutModal">About</a>
+              <a href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+              <a href="#" data-toggle="modal" data-target="#dlModal">Downloads</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div id="fButtons">
+          <!-- Trigger the modal with a button -->
+          <button id="opt" type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal">&#x25b3;</button>
+          <button id="min" class="btn btn-xs btn-warning">-</button>
+          <button id="max" class="btn btn-xs btn-success">&#x25A1;</button>
+          <button id="exit" class="btn btn-danger btn-xs">x</button>
+        </div>
+      </div>
+    </div>
+    <!-- myModal -->
+    <div class="modal fade" id="myModal" role="dialog" tabindex="0">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+            <b class="modal-title">Options</b>
+          </div>
+          <div class="modal-body">
+            <p>Enable Toolbar? &nbsp;<input type="checkbox" id="left-box"><p/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- aboutModal -->
+  <div class="modal fade" id="aboutModal" role="dialog" tabindex="0">
+    <div class="modal-dialog modal-sm" style="width: 260px;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+          <b class="modal-title">Dunce Cap Software</b>
+        </div>
+        <div class="modal-body" style="text-align: center;">
+          <img src="img/logo.png" width="90%" /></br>
+          <b>"Learning every thing the hard way so you don't have to!"</b><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contactModal -->
+<div class="modal fade" id="contactModal" role="dialog" tabindex="0">
+  <div class="modal-dialog modal-sm" style="width: 240px;">
+    <div class="modal-content">
+      <div class="modal-header" >
+        <button type="button" class="btn btn-danger" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+        <b class="modal-title">Dunce Cap Software </b>
+      </div>
+      <div class="modal-body" style="width: 220px;">
+        <b><a href="tel:+16197864687" target="_top"> Give A Call <span class="glyphicon glyphicon-phone"></span></a></b><br></br>
+        <b><a href="sms:+16197864687" target="_top"> Send A Text <span class="glyphicon glyphicon-send"></span></a></b><br></br>
+        <b><a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Use Email <span class="glyphicon glyphicon-envelope"></span></a></b><br></br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- dlModal -->
+<div class="modal fade" id="dlModal" role="dialog" tabindex="0">
+<div class="modal-dialog modal-sm" style="width: 240px;">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" style="float: right;"><span class="glyphicon glyphicon-remove"></span></button>
+      <b class="modal-title">Downloads</b>
+    </div>
+    <div class="modal-body">
+      <b>Android</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">Google Play Store<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>Windows</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>Linux</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">32 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">64 Bit Systems<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+      <b>OSX</b>
+      <p><a style="width: 220px;margin-left: 10px; margin-right: 10px;" href="#">For Mavericks+<span style="float: right;" class="glyphicon glyphicon-cloud-download"></span></a><p/>
+    </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function openModal1(){
+$('#myModal').modal();
+}
+function openModal2(){
+$('#aboutModal').modal();
+}
+function openModal3(){
+$('#contactModal').modal();
+}
+function openModal4(){
+$('#dlModal').modal();
+
+}
+</script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="jquery-3.1.1.slim.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  <div id="hidden">
+    <button id="close-window-button"></button>
+    <button id="minimize-window-button"></button>
+    <button id="maximize-window-button"></button>
+    <button id="unmaximize-window-button"></button>
+    <button id="toggle-window-button"></button>
+    <button id="maxmin-window-button"></button>
+    <input type="checkbox" id="left-box">
+    <input type="checkbox" id="bottom-box">
+    <input type="checkbox" id="right-box">
+    <input type="checkbox" id="top-box">
+  </div>
+</body>
+</html>

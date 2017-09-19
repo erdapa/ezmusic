@@ -1,0 +1,80 @@
+    <html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>EzMusic</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="assets/style.css">
+	  <link rel="shortcut icon" href="images/favicon.png">
+      
+	</head>
+  <body>	
+    <div class="background"> 
+   	  <a href="javascript: void(0)" style="position: fixed;" class="openbtn" onclick="openNav()" title="Main Menu">
+              <span>&#x1F3A7; EzMusic</span>
+          </a>
+	    <div class="sidenav" id="mySidenav">
+	        <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+	      <div class="navhdr">
+	        <a class="navbtn" href="#" title="Click On Me!">
+	          <span>&#x1F3A7; EzMusic</span>
+	        </a>
+	      <div class="navmenu">
+	        <a href="javascript:void(0)" onclick="openDownload()" title="Get The EzMusic App!">Download</a>  
+	        <a href="javascript:void(0)" onclick="openContact()" title="Send Me A Message!">Contact</a>
+	        <a href="javascript:void(0)" onclick="openAbout()" title="Dunce Cap Software!">About</a>  
+	      </div>  
+	      <div class="navftr" title="Dunce Cap Software!">Brought to you by...<br>
+	        <img class="image" id="myLogo" src="images/logo.png"/>
+	      </div>
+	    </div>
+      </div>
+
+
+	    <div class="sidenav" id="aboutSidenav">
+	        <a class="closebtn" href="javascript:void(0)" onclick="closeAbout()">&times;</a>
+	      <div class="aboutSidenav" style="text-align:center;">
+	        <h2>Dunce Cap Software</h2>
+            <p>"Learning every thing the hard way<br>so you don't have to!"</p>
+            <img class="image" id="myLogo" src="images/favicon.png"/>
+              </div>
+	    </div>   
+
+	    <div class="sidenav" id="downloadSidenav">
+	        <a class="closebtn" href="javascript:void(0)" onclick="closeDownload()">&times;</a>
+	      <div class="downloadSidenav" style="text-align:center;"><br/>
+      <b>Download Options</b>
+      <hr style="width:32%" />
+      <b>Android</b>
+      <a href="#">Google Play Store <span class="fa fa-cloud-download"></span></a>
+      <b>Windows</b>
+      <a href="#">Windows 7 and up <span class="fa fa-cloud-download"></span></a>
+      <b>Linux</b>
+      <a href="#">32 and 64 Bit Systems <span class="fa fa-cloud-download"></span></a>
+      <b>Apple</b>
+      <a href="#">OSX Yosemite and newer <span class="fa fa-cloud-download"></span></a>
+              </div>
+	    </div>   
+
+	    <div class="sidenav" id="contactSidenav">
+	        <a class="closebtn" href="javascript:void(0)" onclick="closeContact()">&times;</a>
+	      <div class="contactSidenav"><br/>
+        <b>Contact Options</b>
+      <hr style="width:30%" /><br/>
+<a href="#" target="_top"> Chat &nbsp;<span class="fa fa-user"></span></a><br/>
+<a href="tel:+16197864687" target="_top"> Call &nbsp;<span class="fa fa-phone"></span></a><br/>
+<a href="sms:+16197864687" target="_top"> Text &nbsp;<span class="fa fa-send"></span></a><br/>
+<a href="mailto:duncecapsoftware@gmail.com?Subject=About%20EzMusic" target="_top"> Email &nbsp;<span class="fa fa-envelope"></span></a>
+     	    </div>
+        </div>
+         <!-- End Sidenav-->
+
+	 <!-- Main Page -->           
+    <div id="app"></div>
+        <!-- End of Page -->
+</div>
+        <!-- Page Scripts -->
+  <script type="text/javascript" src="assets/index.js"></script>
+  <script type="text/javascript" src="assets/ezmusic.js"></script>
+</body>
+</html>
